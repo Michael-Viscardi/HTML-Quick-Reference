@@ -1,14 +1,14 @@
 .body {
-    background-color:beige;
+    background-color:white;
 }
 .website-logo { /* How can I make this text logo bigger without "stretching the div?" */
-    color:red;
+    color:ghostwhite;
     font-family: "Arial Black", Gadget, sans-serif;
     vertical-align: baseline;
 }
 .header {
     /* Add buffer */
-    background-color:lightgray;
+    background-color:darkslategrey;
     padding: 5px 5px 5px 5px;
     top:0;
     left:0;
@@ -23,12 +23,17 @@
     position: fixed;
     padding-left:10px;
     z-index: 1;
-    background-color: aliceblue;
+    background-color: whitesmoke;
     overflow: scroll;
+}
+.sidebar-element{
+    display:block;
+    padding-bottom: 5px;
+    padding-left: 2px;
 }
 .content{
     margin-top:12px;
-    background-color:beige;
+    background-color:white;
     margin-left:125px;
     padding-left:5px;
     padding-top:1px;
