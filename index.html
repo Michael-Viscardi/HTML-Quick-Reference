@@ -11,10 +11,12 @@
         </div>
         <div class="sidebar">
             <br />
-            <a href="tag-pages/a.html" class="sidebar-element">&lt;a&gt;</a>
-            <a href="tag-pages/abbr.html" class="sidebar-element">&lt;abbr&gt;</a>
-            <a href="tag-pages/address.html" class="sidebar-element">&lt;address&gt;</a>
-            <a href="tag-pages/article.html" class="sidebar-element">&lt;article&gt;</a>
+            <a href="index.html#a" class="sidebar-element">&lt;a&gt;</a>
+            <a href="index.html#abbr" class="sidebar-element">&lt;abbr&gt;</a>
+            <a href="index.html#address" class="sidebar-element">&lt;address&gt;</a>
+            <a href="index.html#article" class="sidebar-element">&lt;article&gt;</a>
+            <a href="index.html#aside" class="sidebar-element">&lt;aside&gt;</a>
+            <a href="index.html#audio" class="sidebar-element">&lt;audio&gt;</a>
 
             
             <a href="tag-pages/p.html" class="sidebar-element">&lt;p&gt;</a>
@@ -23,6 +25,90 @@
             <h1 class="content-page-header">Welcome to HTML Quick Reference!</h1>
             <p class="description">This site is a quick reference for HTML! You can see all the tags on the sidebar to the left. Click the website logo in on the top to return to this homepage!</p>
             <p class="description">This website was made using HTML, CSS, and GitHub Pages.</p>
+            
+            <hr />
+            <p id="a">&nbsp;</p>
+            
+            <h1 class ="content-page-header">&lt;a&gt;</h1>
+            <p class="description">The &lt;a&gt; tag creates a hyperlink. You specify the URL of your link within the <span class="syntax">href</span> attribute and the text of the hyperlink between the two tags. It can either be a link to an external website using the full URL of the website or a link to the a different page of the current website using a relative link.</p>
+            <h3 class ="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;a href="https://www.wikipedia.org/"&gt;Link to wikipedia&lt;a&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- External URL link --&gt;</p>
+            <p class="syntax">&lt;a href="p.html"&gt;Link to &lt;p&gt; tag on this website&lt;a&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Relative URL link --&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <a href="https://www.wikipedia.org/">Link to wikipedia</a>
+            <br />
+            <a href="p.html">Link to &lt;p&gt; tag on this website</a>
+            
+            <br />
+            <p id="abbr">&nbsp;</p>
+            
+            <h1 class ="content-page-header">&lt;abbr&gt;</h1>
+            <p class="description">The &lt;abbr&gt; tag allows you to create abbreviations/acronyms that, when moused over, shows the full definition of the abbreviation/acronym. You define the full definition using the <span class="syntax">title</span> tag.</p>
+            <h3 class ="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;abbr title="Hypertext Markup Language"&gt;HTML (Mouse over me!)&lt;/abbr&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <abbr title="Hypertext Markup Language">HTML (Mouse over me!)</abbr>
+            
+            <br />
+            <p id="address">&nbsp;</p>
+            
+            <h1 class ="content-page-header">&lt;address&gt;</h1>
+            <p class="description">The address tag allows you to specify contact or address details for a person. It is usually automatically italicized by the browser.</p>
+            <h3 class ="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;address&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;400 Broad St, Seattle, Washington 98109&lt;/p&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;a href="mailto:firstname.lastname@example.org"&gt;firstname.lastname@example.org&lt;/a&gt;&lt;/p&gt;
+            <p class="syntax">&lt;/address&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <address>
+                <p>400 Broad St, Seattle, Washington 980109</p>
+                <p><a href="mailto:fistname.lastname@example.org">firstname.lastname@example.org</a></p>
+            </address>
+            
+            <br />
+            <p id="article">&nbsp;</p>
+
+            <h1 class ="content-page-header">&lt;article&gt;</h1>
+            <p class="description">The &lt;article&gt; tag allows you to specify self-contained content, like a news story or blog post. &lt;article&gt; elements are exclusive to HTML5 and are not supported on Windows Internet Explorer, but is supported on Microsoft Edge.</p>
+            <h3 class ="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;article&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;This is the article's title&lt;/h1&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is a paragraph in the article&lt;/p&gt;</p>
+            <p class="syntax">&lt;/article&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <article>
+                <h1>This is the article's title</h1>
+                <p>This is a paragraph in the article.</p>
+            </article>
+            
+            <br />
+            <p id="aside">&nbsp;</p>
+
+            <h1 class ="content-page-header">&lt;aside&gt;</h1>
+            <p class="description">The &lt;aside&gt; tag is used to specify content in an &lt;article&gt; or on the whole website that is important and relevant, but is not required for the &lt;article&gt;/page. It does not automatically format its content to be in a side margin and requires CSS to do so. An examle of how &lt;aside&gt; should be used is defining a word on used in an article in the margin of said article.</p>
+            <h3 class ="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;aside&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This "aside" information is relevant, but not required!&lt;/p&gt;</p>
+            <p class="syntax">&lt;/aside&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <aside>
+                <p>This "aside" information is relevant, but not required!</p>
+            </aside>
+                        
+            <br />
+            <p id="audio">&nbsp;</p>
+
+            <h1 class ="content-page-header">&lt;audio&gt;</h1>
+            <p class="description">The audio tag allows you to include audio files in your websites. You specify where the audio file is using the <span class="syntax">src</span> attribute (usually with a relative link). You specify if the website plays the audio automatically using the <span class="syntax">preload</span> attribute. Finally, you also specify if browser audio controls are shown using the <span class="syntax">controls</span> attribute. If the audio file you want to display is unsupported, the browser will display the &lt;p&gt; text. You can specify "fallback" sources of audio using the <span class="syntax">&lt;source&gt;</span></p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;audio src="resources/media/audio-sample.mp3" preload="none" controls&gt;
+            <p class="syntax">&lt;p&gt;This audio format is not supported.&lt;/p&gt;</p>
+            <p class="syntax">&lt;/audio&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <audio src="resources/media/audio-sample.mp3" preload="none" controls>
+            <p>This audio format is not supported.</p>
+            </audio>
+            
         </div>
     </body>
 </html>
