@@ -11,18 +11,345 @@
         </div>
         <div class="sidebar">
             <br />
-            <a href="tag-pages/a.html" class="sidebar-element">&lt;a&gt;</a>
-            <a href="tag-pages/abbr.html" class="sidebar-element">&lt;abbr&gt;</a>
-            <a href="tag-pages/address.html" class="sidebar-element">&lt;address&gt;</a>
-            <a href="tag-pages/article.html" class="sidebar-element">&lt;article&gt;</a>
+            <a href="index.html#a" class="sidebar-element">&lt;a&gt;</a>
+            <a href="index.html#abbr" class="sidebar-element">&lt;abbr&gt;</a>
+            <a href="index.html#address" class="sidebar-element">&lt;address&gt;</a>
+            <a href="index.html#article" class="sidebar-element">&lt;article&gt;</a>
+            <a href="index.html#aside" class="sidebar-element">&lt;aside&gt;</a>
+            <a href="index.html#audio" class="sidebar-element">&lt;audio&gt;</a>
+            <a href="index.html#b" class="sidebar-element">&lt;b&gt;</a>
+            <a href="index.html#blockquote" class="sidebar-element">&lt;blockquote&gt;</a>
+            <a href="index.html#body" class="sidebar-element">&lt;body&gt;</a>
+            <a href="index.html#br /" class="sidebar-element">&lt;br /&gt;</a>
+            <a href="index.html#button" class="sidebar-element">&lt;button&gt;</a>
+            <a href="index.html#cite" class="sidebar-element">&lt;cite&gt;</a>
+            <a href="index.html#dd" class="sidebar-element">&lt;dd&gt;</a>
+            <a href="index.html#del" class="sidebar-element">&lt;del&gt;</a>
+            <a href="index.html#dfn" class="sidebar-element">&lt;dfn&gt;</a>
+            <a href="index.html#div" class="sidebar-element">&lt;div&gt;</a>
+            <a href="index.html#dl" class="sidebar-element">&lt;dl&gt;</a>
+            <a href="index.html#dt" class="sidebar-element">&lt;dt&gt;</a>
+            <a href="index.html#em" class="sidebar-element">&lt;em&gt;</a>
+            <a href="index.html#fieldset" class="sidebar-element">&lt;fieldset&gt;</a>
+            <a href="index.html#figcaption" class="sidebar-element">&lt;figcaption&gt;</a>
+            <a href="index.html#figure" class="sidebar-element">&lt;figure&gt;</a>
+            <a href="index.html#footer" class="sidebar-element">&lt;footer&gt;</a>
+
+
+
 
             
-            <a href="tag-pages/p.html" class="sidebar-element">&lt;p&gt;</a>
         </div>
         <div class="content">
             <h1 class="content-page-header">Welcome to HTML Quick Reference!</h1>
             <p class="description">This site is a quick reference for HTML! You can see all the tags on the sidebar to the left. Click the website logo in on the top to return to this homepage!</p>
             <p class="description">This website was made using HTML, CSS, and GitHub Pages.</p>
+            
+            <hr />
+            <p id="a">&nbsp;</p>
+            
+            <h1 class ="content-page-header">&lt;a&gt;</h1>
+            <p class="description">The &lt;a&gt; tag creates a hyperlink. You specify the URL of your link within the <span class="syntax">href</span> attribute and the text of the hyperlink between the two tags. It can either be a link to an external website using the full URL of the website or a link to the a different page of the current website using a relative link.</p>
+            <h3 class ="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;a href="https://www.wikipedia.org/"&gt;Link to wikipedia&lt;a&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- External URL link --&gt;</p>
+            <p class="syntax">&lt;a href="p.html"&gt;Link to &lt;p&gt; tag on this website&lt;a&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Relative URL link --&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <a href="https://www.wikipedia.org/">Link to wikipedia</a>
+            <br />
+            <a href="p.html">Link to &lt;p&gt; tag on this website</a>
+            
+            <br />
+            <p id="abbr">&nbsp;</p>
+            
+            <h1 class ="content-page-header">&lt;abbr&gt;</h1>
+            <p class="description">The &lt;abbr&gt; tag allows you to create abbreviations/acronyms that, when moused over, shows the full definition of the abbreviation/acronym. You define the full definition using the <span class="syntax">title</span> tag.</p>
+            <h3 class ="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;abbr title="Hypertext Markup Language"&gt;HTML (Mouse over me!)&lt;/abbr&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <abbr title="Hypertext Markup Language">HTML (Mouse over me!)</abbr>
+            
+            <br />
+            <p id="address">&nbsp;</p>
+            
+            <h1 class ="content-page-header">&lt;address&gt;</h1>
+            <p class="description">The address tag allows you to specify contact or address details for a person. It is usually automatically italicized by the browser.</p>
+            <h3 class ="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;address&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;400 Broad St, Seattle, Washington 98109&lt;/p&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&lt;a href="mailto:firstname.lastname@example.org"&gt;firstname.lastname@example.org&lt;/a&gt;&lt;/p&gt;
+            <p class="syntax">&lt;/address&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <address>
+                <p>400 Broad St, Seattle, Washington 980109</p>
+                <p><a href="mailto:fistname.lastname@example.org">firstname.lastname@example.org</a></p>
+            </address>
+            
+            <br />
+            <p id="article">&nbsp;</p>
+
+            <h1 class ="content-page-header">&lt;article&gt;</h1>
+            <p class="description">The &lt;article&gt; tag allows you to specify self-contained content, like a news story or blog post. &lt;article&gt; elements are exclusive to HTML5 and are not supported on Windows Internet Explorer, but is supported on Microsoft Edge.</p>
+            <h3 class ="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;article&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;This is the article's title&lt;/h1&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is a paragraph in the article.&lt;/p&gt;</p>
+            <p class="syntax">&lt;/article&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <article>
+                <h1>This is the article's title</h1>
+                <p>This is a paragraph in the article.</p>
+            </article>
+            
+            <br />
+            <p id="aside">&nbsp;</p>
+
+            <h1 class ="content-page-header">&lt;aside&gt;</h1>
+            <p class="description">The &lt;aside&gt; tag is used to specify content in an &lt;article&gt; or on the whole website that is important and relevant, but is not required for the &lt;article&gt;/page. It does not automatically format its content to be in a side margin and requires CSS to do so. An examle of how &lt;aside&gt; should be used is defining a word on used in an article in the margin of said article.</p>
+            <h3 class ="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;aside&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This "aside" information is relevant, but not required!&lt;/p&gt;</p>
+            <p class="syntax">&lt;/aside&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <aside>
+                <p>This "aside" information is relevant, but not required!</p>
+            </aside>
+                        
+            <br />
+            <p id="audio">&nbsp;</p>
+
+            <h1 class ="content-page-header">&lt;audio&gt;</h1>
+            <p class="description">The audio tag allows you to include audio files in your websites. You specify where the audio file is using the <span class="syntax">src</span> attribute (usually with a relative link). You specify if the website plays the audio automatically using the <span class="syntax">preload</span> attribute. Finally, you also specify if browser audio controls are shown using the <span class="syntax">controls</span> attribute. If the audio file you want to display is unsupported, the browser will display the &lt;p&gt; text. You can specify "fallback" sources of audio using the <span class="syntax">&lt;source&gt;</span></p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;audio src="resources/media/audio-sample.mp3" preload="none" controls&gt;
+            <p class="syntax">&lt;p&gt;This audio format is not supported.&lt;/p&gt;</p>
+            <p class="syntax">&lt;/audio&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <audio src="resources/media/audio-sample.mp3" preload="none" controls>
+            <p>This audio format is not supported.</p>
+            </audio>
+            
+            <br />
+            <p id="b">&nbsp;</p>
+            
+            <h1 class ="content-page-header">&lt;b&gt;</h1>
+            <p class="description">The &lt;b&gt; tag bolds text within a paragraph. The Semantic Markup's &lt;strong&gt; tag also usually bolds text.</p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;p&gt;This paragraph has some &lt;b&gt;bolded text.&lt;/b&gt;&lt;/p&gt;
+            <h3 class="content-section-header">In Use</h3>
+            <p>This paragraph has some <b>bolded text.</b></p>
+            
+            <br />
+            <p id="blockquote">&nbsp;</p>
+            
+            <h1 class ="content-page-header">&lt;blockquote&gt;</h1>
+            <p class="description">The &lt;blockquote&gt; tag allows you to insert longer, paragraph-length block quotes. &lt;blockquote&gt; is usually indented by the browser. Use the <span class="syntax">cite</span> attribute to show where the quote is from.
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;blockquote cite="https://en.wikipedia.org/wiki/HTML"&gt;
+            <p class="syntax">&lt;p&gt;Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web.&lt;/p&gt;</p>
+            <p class="syntax">&lt;/blockquote&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <blockquote cite="https://en.wikipedia.org/wiki/HTML">
+            <p>Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web.</p>
+            </blockquote>
+            
+            <br />
+            <p id="body">&nbsp;</p>
+            
+            <h1 class ="content-page-header">&lt;body&gt;</h1>
+            <p class="description">The body tag contains all HTML code that is to be displayed in the main browser window. Everyting in your browser window right now is within a body tag.</p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;body&gt;
+            <p class="syntax">&lt;!--INSERT WEBSITE CODE--&gt;</p>
+            <p class="syntax">&lt;/body&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <p>Everything on your screen right now is in the body tag.</p>
+            <a href="tag-pages/body.html">Check out this link for a full-page example.</a>
+            
+            <br />
+            <p id="br /">&nbsp;</p>
+            
+            <h1 class ="content-page-header">&lt;br /&gt;</h1>
+            <p class="description">The &lt;br /&gt; empty tag creates line break. </p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;p&gt;There is an extra line break between these two paragraphs&lt;/p&gt;
+            <p class="syntax">&lt;br /&gt;</p>
+            <p class="syntax">&lt;p&gt;Second paragraph&lt;/p&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <p>There is an extra line break between these two paragraphs</p>
+            <br />
+            <p>Sample Paragraph</p>
+            
+            <br />
+            <p id="button">&nbsp;</p>
+            
+            <h1 class ="content-page-header">&lt;button&gt;</h1>
+            <p class="description">The &lt;button&gt; empty tag creates a button you can click. Buttons suport event attributes to cause action.</p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;Button&gt;&lt;img src="resources/media/favicon.png" width="10" height="10"&gt; Sample Button&lt;/button&gt;
+            <h3 class="content-section-header">In Use</h3>
+            <button><img src="resources/media/favicon.png" width="10" height="10"> Sample Button</button>
+            
+            <br />
+            <p id="cite">&nbsp;</p>
+            
+            <h1 class ="content-page-header">&lt;cite&gt;</h1>
+            <p class="description">The &lt;cite&gt; tag italicizes text, but is part of semantic markup.</p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;p&gt;&lt;cite&gt;HTML&amp;CSS: Design and Build Websites&lt;cite&gt; by Jon Duckett is where I learned HTML and CSS!&lt;/p&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <p><cite>HTML&amp;CSS: Design and Build Websites</cite> by Jon Duckett is where I learned HTML and CSS!</p>
+            
+            <br />
+            <p id="dd">&nbsp;</p>
+            
+            <h1 class ="content-page-header">&lt;dd&gt;</h1>
+            <p class="description">The &lt;dd&gt; tag shows the definition within a definition list (<a href="index.html#dl">&lt;dl&gt;</a>) </p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax"><i>see <a href="index.html#dl">&lt;dl&gt;</a></i></p>
+            <h3 class="content-section-header">In Use</h3>
+            <p><i>see <a href="index.html#dl">&lt;dl&gt;</a></i></p>
+            
+            <br />
+            <p id="del">&nbsp;</p>
+            
+            <h1 class ="content-page-header">&lt;del&gt;</h1>
+            <p class="description">The &lt;del&gt; tag shows its content has been deleted. It puts a strikethrough on its content by default and is part of semantic markup.</p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;p&gt;&lt;del&gt;Deleted Text&lt;/del&gt;&lt;/p&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <p><del>Deleted Text.</del></p>
+            
+            <br />
+            <p id="dfn">&nbsp;</p>
+            
+            <h1 class ="content-page-header">&lt;dfn&gt;</h1>
+            <p class="description">The &lt;dfn&gt; tag shows the defining instance of a new term, like a new vocabulary word. Some browsers put &lt;dfn&gt; tags in italics, while others, like Safari (Apple's Browser) do not.</p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;p&gt;HTML - &lt;dfn&gt;HTML is Hypertext Markup Language. It is used to build websites.&lt;/dfn&gt;&lt;/p&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <p>HTML - <dfn>HTML is Hypertext Markup Language. It is used to build websites.</dfn></p>
+            
+            <br />
+            <p id="div">&nbsp;</p>
+            
+            <h1 class ="content-page-header">&lt;div&gt;</h1>
+            <p class="description">The &lt;div&gt; tag allows you to group elements together in a block-level organizational box. You can use CSS to specify the specifics of a div using the <a href="index.html#style">&lt;style&gt;</a> tag or by using the <span class="syntax">id</span> or <span class="syntax">class</span> attributes.
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax"><a href="tag-pages/div.html">&lt;div&gt; Syntax and Example</a></p>
+            <h3 class="content-section-header">In Use</h3>
+            <p><a href="tag-pages/div.html">&lt;div&gt; Syntax and Example</a></p>
+            
+            <br />
+            <p id="dl">&nbsp;</p>
+            
+            <h1 class ="content-page-header">&lt;dl&gt;</h1>
+            <p class="description">The &lt;dl&gt; creates a definition list. You can put multiple items in this list with their definitions below using the &lt;dt&gt; (definition term) and &lt;dd&gt; (definition definition) tags. Terms are not indented while definitions are.</p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;dl&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;dt&gt;This is a definition term&lt;/dt&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;This is the definition of said term&lt;/dd&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;dt&gt;HTML&lt;/dt&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;HTML is Hypertext Markup Language. It is used to build websites.&lt;/dd&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;dt&gt;CSS&lt;/dt&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;CSS is Cascading Style Sheets. It is used to style and format websites.&lt;/dd&gt;</p>
+            <p class="syntax">&lt;/dl&gt;</p>
+
+            
+            <h3 class="content-section-header">In Use</h3>
+            <dl>
+                <dt>This is a definition term</dt>
+                <dd>This is the definition of said term</dd>
+                <dt>HTML</dt>
+                <dd>HTML is Hypertext Markup Language. It is used to build websites</dd>
+                <dt>CSS</dt>
+                <dd>CSS is Cascading Style Sheets. It is used to style and format websites</dd>
+            </dl>
+            
+            <br />
+            <p id="dt">&nbsp;</p>
+            
+            <h1 class ="content-page-header">&lt;dt&gt;</h1>
+            <p class="description">The &lt;dd&gt; tag shows the definition term definition list (<a href="index.html#dl">&lt;dl&gt;</a>) </p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax"><i>see <a href="index.html#dl">&lt;dl&gt;</a></i></p>
+            <h3 class="content-section-header">In Use</h3>
+            <p><i>see <a href="index.html#dl">&lt;dl&gt;</a></i></p>
+            
+            <br />
+            <p id="em">&nbsp;</p>
+            
+            <h1 class ="content-page-header">&lt;em&gt;</h1>
+            <p class="description">The &lt;em&gt; tag italicizes text. It indicates emphasis and is part of semantic markup </p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;p&gt;This text shows &lt;em&gt;emphasis&lt;/em&gt; using the em tag.&lt;/p&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <p>This text shows <em>emhpasis</em> using the em tag.</p>
+            
+            <br />
+            <p id="fieldset">&nbsp;</p>
+            
+            <h1 class ="content-page-header">&lt;fieldset&gt;</h1>
+            <p class="description">The &lt;fieldset&gt; tag groups input fields together. The <a href="index.html#legend">&lt;legend&gt; tag gives the &lt;fieldset&gt; a name.</a> The <a href="index.html#label">&lt;label&gt;</a> tag defines each of the fields in the set.</p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;fieldset&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;legend&gt;Full Name&lt;/legend&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;First Name:&lt;br /&gt;&lt;input type="text"&gt;&lt;/label&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;br /&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Last Name:&lt;br /&gt;&lt;input type="text"&gt;&lt;/label&gt;</p>
+            <p class="syntax">&lt;/fieldset&gt;</p>
+
+            <h3 class="content-section-header">In Use</h3>
+            <fieldset>
+                <legend>Full Name</legend>
+                <label>First Name:<br /><input type="text"></label>
+                <br />
+                <label>Last Name:<br /><input type="text"></label>
+            </fieldset>
+            
+            <br />
+            <p id="figcaption">&nbsp;</p>
+            
+            <h1 class ="content-page-header">&lt;figcaption&gt;</h1>
+            <p class="description">The &lt;figcaption&gt; tag allows you to add a caption to an image or group of images made using the <a href="index.html#figure">&lt;figure&gt;</a> tag. </p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax"><i>see <a href="index.html#figure">&lt;figure&gt;</a></i></p>
+            <h3 class="content-section-header">In Use</h3>
+            <p><i>see <a href="index.html#figure">&lt;figure&gt;</a></i></p>
+
+            <br />
+            <p id="figure">&nbsp;</p>
+            
+            <h1 class ="content-page-header">&lt;figure&gt;</h1>
+            <p class="description">The figure tag allows you to insert images onto your website using relative or absolute URLs. You can add multiple images with one figure tag, but you may only have one <a href="index.html#figcaption">&lt;figcaption&gt;</a> caption per &lt;figure&gt; tag that is shared for all images.</p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;figure&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="resourcecs/media/favicon.png" /&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;figcaption&gt;This is the HTML Quick Reference's Logo! I made it using Paint.NET&lt;/figcaption&gt;</p>
+            <p class="syntax">&lt;/figure&gt;</p>
+
+            <h3 class="content-section-header">In Use</h3>
+            <figure>
+                <img src="resources/media/favicon.png" />
+                <figcaption>This is the HTML Quick Reference's Logo! I made it using Paint.NET</figcaption>
+            </figure>
+            
+            <br />
+            <p id="footer">&nbsp;</p>
+
+            <h1 class ="content-page-header">&lt;footer&gt;</h1>
+            <p class="description">The &lt;footer&gt; tag specifies content in the footer of the entire website, <a href="index.html#article">&lt;article&gt;</a>, or <a href="index.html#section">&lt;section&gt;</a></p>
+            <h3 class ="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;article&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;This is the article's title&lt;p&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is a paragraph in the article.&lt;p&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;footer&gt;&lt;p&gt;This is the article's footer&lt;p&gt;&lt;/footer&gt;</p>
+            <p class="syntax">&lt;/article&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <article>
+                <h1>This is the article's title</h1>
+                <p>This is a paragraph in the article.</p>
+                <footer><p>This is the article's footer</p></footer>
+            </article>
         </div>
     </body>
 </html>
