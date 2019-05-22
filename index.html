@@ -46,6 +46,15 @@
             <a href="index.html#hr /" class="sidebar-element">&lt;hr /&gt;</a>
             <a href="index.html#html" class="sidebar-element">&lt;html&gt;</a>
             <a href="index.html#i" class="sidebar-element">&lt;i&gt;</a>
+            <a href="index.html#iframe" class="sidebar-element">&lt;iframe&gt;</a>
+            <a href="index.html#img" class="sidebar-element">&lt;img&gt;</a>
+            <a href="index.html#input" class="sidebar-element">&lt;input&gt;</a>
+            <a href="index.html#ins" class="sidebar-element">&lt;ins&gt;</a>
+            <a href="index.html#label" class="sidebar-element">&lt;label&gt;</a>
+            <a href="index.html#legend" class="sidebar-element">&lt;legend&gt;</a>
+            <a href="index.html#li" class="sidebar-element">&lt;li&gt;</a>
+            <a href="index.html#link" class="sidebar-element">&lt;link&gt;</a>
+
             <br />
             <br />
             
@@ -307,7 +316,6 @@
             <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;br /&gt;</p>
             <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Last Name:&lt;br /&gt;&lt;input type="text"&gt;&lt;/label&gt;</p>
             <p class="syntax">&lt;/fieldset&gt;</p>
-
             <h3 class="content-section-header">In Use</h3>
             <fieldset>
                 <legend>Full Name</legend>
@@ -396,9 +404,11 @@
             <p id="head">&nbsp;</p>
             
             <h1 class ="content-page-header">&lt;head&gt;</h1>
-            <p class="description">The &lt;head&gt; tag allows you to specify information about the website. It usually contains an <a href="index.html#title">&lt;title&gt;</a> tag, which displays the text in the tab of the browser.</p>
+
+            <p class="description">The &lt;head&gt; tag allows you to specify information about the website. It usually contains an <a href="index.html#title">&lt;title&gt;</a> tag, which displays the text in the tab of the browser. It can also contain <a href="index.html#link">&lt;link&gt;;</a> tag to link the page to CSS or an icon.</p>
             <h3 class="content-section-header">Syntax</h3>
-            <p class="syntax">&lt;!-- The following syntax is for this page. It specifies the CSS stylesheet, the website icon, and the tab's text.--&gt;</p>
+            <p class="syntax">&lt;!-- The following syntax is for this page. It specifies the CSS stylesheet, the website icon, and the browser tab's text.--&gt;</p>
+
             <p class="syntax">&lt;head&gt;
             <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;link href="resources/css/contentpagestyle.css" type="text/css" rel="stylesheet" media="screen" /&gt;</p>
             <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="icon" href="resources/media/favicon.png"/&gt;</p>
@@ -477,9 +487,115 @@
             <h1 class ="content-page-header">&lt;i&gt;</h1>
             <p class="description">The &lt;i&gt; tag italicizes text.</p>
             <h3 class="content-section-header">Syntax</h3>
-            <p class="syntax">&lt;p&gt;This paragraph has some &lt;i&gt;italic text.&lt;/i&gt;&lt;/p&gt;
+            <p class="syntax">&lt;p&gt;This paragraph has some &lt;i&gt;italic text.&lt;/i&gt;&lt;/p&gt;</p>
+
             <h3 class="content-section-header">In Use</h3>
             <p>This paragraph has some <i>italic text.</i></p>
+            
+            <br />
+            <p id="iframe">&nbsp;</p>
+            
+            <h1 class ="content-page-header">&lt;iframe&gt;</h1>
+            <p class="description">The &lt;iframe&gt; tag allows you to display another webpage within a window with a specified size on your webpage. Designate the URL of the website using the <span class="syntax">src</span> attribute.</p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;iframe src="https://en.wikipedia.org/wiki/HTML width=600 height=400&gt;</p>
+            <p class="syntax">&lt;/iframe&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <iframe src="https://en.wikipedia.org/wiki/HTML" width=600 height=400>
+            </iframe>
+            
+            <br />
+            <p id="img">&nbsp;</p>
+            
+            <h1 class="content-page-header">&lt;img&gt;</h1>
+            <p class="description">The &lt;img&gt; empty tag allows you to display an image. You use the <span class="syntax">src</span> attribute to specify the image. The <span class="syntax">title</span> attribute defines the tooltip for the image (which is shown when the user hovers over it with the mouse pointer). The <span class="syntax">width</span> and <span class="syntax">height</span> attributes define the size of an image.</p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;img src="resources/media/favicon.png" width=512 height=512 title="This is HTML Quick Reference's logo."/&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <img src="resources/media/favicon.png" width=512 height=512 title="This is HTML Quick Reference's logo."/>
+            
+            <br />
+            <p id="input">&nbsp;</p>
+            
+            <h1 class="content-page-header">&lt;input /&gt;</h1>
+            <p class="description">The &lt;input&gt; tag is used to create input fields like text input feilds or buttons. You can specify the &lt;input&gt; tag's type with the <span class="syntax">type</span> attribute. You can label your input field with the <a href="index.html#label">label</a> tag. Because this website does not have a serverside, these inputs will not do anything.</p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;input type="text" /&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <input type="text" />
+            
+            <br />
+            <p id="ins">&nbsp;</p>
+            
+            <h1 class="content-page-header">&lt;ins&gt;</h1>
+            <p class="description">The &lt;ins&gt; tag allows you to show text that has been inserted into a document within &lt;p&gt; tags. It is usually underlined. &lt;ins&gt; is part of semantic markup.</p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;p&gt;This text has been &lt;ins&gt;inserted.&lt;/ins&gt;&lt;/p&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <p>This text has been <ins>inserted.</ins></p>
+            
+            <br />
+            <p id="label">&nbsp;</p>
+            
+            <h1 class="content-page-header">&lt;label&gt;</h1>
+            <p class="description">The &lt;label&gt; tag allows you to designate the purpose of your <a href="index.html#input">&lt;input&gt;</a> tags. You can make &lt;label&gt; tags encompass an input or designate which input the &lt;label&gt; is for using the <span class="syntax">for</span> attribute</p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;label&gt;Name: &lt;input type="text" /&gt;&lt;/label&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <label>Name: <input type="text"/></label>
+            
+            <br />
+            <p id="legend">&nbsp;</p>
+            
+            <h1 class ="content-page-header">&lt;legend&gt;</h1>
+            <p class="description">The &lt;legend&gt; tag allows you to create a title or caption for a <a href="index.html#fieldset">&lt;fieldset&gt;</a>.</p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;fieldset&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;legend&gt;Full Name&lt;/legend&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;First Name:&lt;br /&gt;&lt;input type="text"&gt;&lt;/label&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;br /&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Last Name:&lt;br /&gt;&lt;input type="text"&gt;&lt;/label&gt;</p>
+            <p class="syntax">&lt;/fieldset&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <fieldset>
+                <legend>THIS IS THE LEGEND</legend>
+                <label>Input One:<br /><input type="text"></label>
+                <br />
+                <label>Input Two:<br /><input type="text"></label>
+            </fieldset>
+            
+            <br />
+            <p id="li">&nbsp;</p>
+            
+            <h1 class="content-page-header">&lt;li&gt;</h1>
+            <p class="description">The &lt;li&gt; tag creates members within the lists created by the <a href="index.html#ul">&lt;ul&gt;</a> tag or the <a href="index.html#ol">&lt;ol&gt;</a> tag. </p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;ul&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;This is &lt;li&gt; one.&lt;/li&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;This is &lt;li&gt; two.&lt;/li&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;This is &lt;li&gt; three.&lt;/li&gt;</p>
+            <p class="syntax">&lt;/ul&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <ul>
+                <li>This is &lt;li&gt; one.</li>
+                <li>This is &lt;li&gt; two.</li>
+                <li>This is &lt;li&gt; three.</li>
+            </ul>
+            
+            <br />
+            <p id="link">&nbsp;</p>
+            
+            <h1 class="content-page-header">&lt;link /&gt;</h1>
+            <p class="description">The &lt;link&gt; empty tag allows you to link CSS or images to your html code. It is found in the <a href="index.html#head">&lt;head&gt;</a> tag.</p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;!-- The following syntax is for this page. It specifies the CSS stylesheet and the website icon.--&gt;</p>
+            <p class="syntax">&lt;link href="resources/css/contentpagestyle.css" type="text/css" rel="stylesheet" media="screen" /&rt;</p>
+            <p class="syntax">&lt;link rel="icon" href="resources/media/favicon.png"/&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <p>The styling and the icon in the browser tab are examples of &lt;link&gt; in use.</p>
+            
+            
+            
             
             <br />
             <br />
