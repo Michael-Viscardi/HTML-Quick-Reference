@@ -9,7 +9,7 @@
         <div class="header">
             <a class="website-logo" href="index.html">HTML Quick Reference</a>
         </div>
-        <div class="sidebar">
+        <div class="sidebar"> <!-- Controls the sidebar. All of the sidebar links are seen here -->
             <br />
             <a href="index.html#a" class="sidebar-element">&lt;a&gt;</a>
             <a href="index.html#abbr" class="sidebar-element">&lt;abbr&gt;</a>
@@ -54,16 +54,52 @@
             <a href="index.html#legend" class="sidebar-element">&lt;legend&gt;</a>
             <a href="index.html#li" class="sidebar-element">&lt;li&gt;</a>
             <a href="index.html#link" class="sidebar-element">&lt;link&gt;</a>
-
+            <a href="index.html#meta" class="sidebar-element">&lt;meta&gt;</a>
+            <a href="index.html#ol" class="sidebar-element">&lt;ol&gt;</a>
+            <a href="index.html#option" class="sidebar-element">&lt;option&gt;</a>
+            <a href="index.html#p" class="sidebar-element">&lt;p&gt;</a>
+            <a href="index.html#q" class="sidebar-element">&lt;q&gt;</a>
+            <a href="index.html#s" class="sidebar-element">&lt;s&gt;</a>
+            <a href="index.html#script" class="sidebar-element">&lt;script&gt;</a>
+            <a href="index.html#section" class="sidebar-element">&lt;section&gt;</a>
+            <a href="index.html#select" class="sidebar-element">&lt;select&gt;</a>
+            <a href="index.html#source" class="sidebar-element">&lt;source&gt;</a>
+            <a href="index.html#span" class="sidebar-element">&lt;span&gt;</a>
+            <a href="index.html#strong" class="sidebar-element">&lt;strong&gt;</a>
+            <a href="index.html#style" class="sidebar-element">&lt;style&gt;</a>
+            <a href="index.html#sub" class="sidebar-element">&lt;sub&gt;</a>
+            <a href="index.html#sup" class="sidebar-element">&lt;sup&gt;</a>
+            <a href="index.html#table-stuff" class="sidebar-element">&lt;table&gt;</a>
+            <a href="index.html#table-stuff" class="sidebar-element">&lt;tbody&gt;</a>
+            <a href="index.html#table-stuff" class="sidebar-element">&lt;td&gt;</a>
+            <a href="index.html#textarea" class="sidebar-element">&lt;textarea&gt;</a>
+            <a href="index.html#table-stuff" class="sidebar-element">&lt;tfoot&gt;</a>
+            <a href="index.html#table-stuff" class="sidebar-element">&lt;th&gt;</a>
+            <a href="index.html#table-stuff" class="sidebar-element">&lt;thead&gt;</a>
+            <a href="index.html#title" class="sidebar-element">&lt;title&gt;</a>
+            <a href="index.html#table-stuff" class="sidebar-element">&lt;tr&gt;</a>
+            <a href="index.html#u" class="sidebar-element">&lt;u&gt;</a>
+            <a href="index.html#ul" class="sidebar-element">&lt;ul&gt;</a>
+            <a href="index.html#video" class="sidebar-element">&lt;video&gt;</a>
             <br />
             <br />
-            
         </div>
-        <div class="content">
+        <div class="content">   <!-- Welcome message and general overview of HTML. -->
             <h1 class="content-page-header">Welcome to HTML Quick Reference!</h1>
             <p class="description">This site is a quick reference for HTML! You can see all the tags on the sidebar to the left. Click the website logo in on the top to return to this homepage!</p>
             <p class="description">This website was made using HTML, CSS, and GitHub Pages.</p>
+            <p class="description">HTML stands for Hypertext Markup Language. Its current version is HTML5. HTML is made up of <dfn>elements</dfn>, which are composed of an <dfn>opening tag</dfn> and <dfn>closing tag</dfn> or an <dfn>empty tag</dfn> (empty tags self-close with a /). These tags contain <dfn>attributes</dfn> that provide additional functionality for a tag. Attributes are used within the angle-brackets of an opening tag or empty tag and are composed of a <dfn>name</dfn> and a <dfn>value</dfn>. The following showcases general HTML syntax: (You can continue adding attributes as long as they are compatible with the tag.)</p>
+            <br />
+            <p class="description">REGULAR TAG: <span class="syntax">&lt;[TAG] [ATTRIBUTE NAME 1]="[ATTRIBUTE VALUE 1] [ATTRIBUTE NAME 2]="[ATTRIBUTE VALUE 2]"&gt; [TAG CONTENT]&lt;/[TAG]&gt;</span></p>
+            <p class="description">EMPTY TAG: <span class="syntax">&lt;[TAG] [ATTRIBUTE NAME 1]="[ATTRIBUTE VALUE 1] [ATTRIBUTE NAME 2]="[ATTRIBUTE VALUE 2]"&gt; [TAG CONTENT] /&gt;</span></p>
+            <br />
+            <p class="description">HTML (usually .html files) is one of the 3 core technologies of the World Wide Web, the other two being CSS and JavaScript. (.html)</p>
+            <p class="description">CSS (.css files)(Cascading Style Sheets) is a style sheet language and can be used to style and format HTML. You can apply CSS stylesheets to your websites using <a href="index.html#link">&lt;link&gt;</a> tag or a <a href="index.html#style">&lt;style&gt;</a> tag (CSS syntax and use are not included on this guide).</p>
+            <p class="description">JavaScript (.js files) is a high-level, interpreted programming language that is object-oriented. It is used to add more functionality and interaction within your web pages or web applications.(JavaScript syntax and use are not included on this guide).</p>
             
+            <!-- Beginning of Quick Reference -->
+            
+            <br />
             <hr />
             <p id="a">&nbsp;</p>
             
@@ -91,7 +127,7 @@
             <p id="address">&nbsp;</p>
             
             <h1 class ="content-page-header">&lt;address&gt;</h1>
-            <p class="description">The address tag allows you to specify contact or address details for a person. It is usually automatically italicized by the browser.</p>
+            <p class="description">The &lt;address&gt; tag allows you to specify contact or address details for a person. It is usually automatically italicized by the browser.</p>
             <h3 class ="content-section-header">Syntax</h3>
             <p class="syntax">&lt;address&gt;</p>
             <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;400 Broad St, Seattle, Washington 98109&lt;/p&gt;</p>
@@ -137,9 +173,10 @@
             <p id="audio">&nbsp;</p>
 
             <h1 class ="content-page-header">&lt;audio&gt;</h1>
-            <p class="description">The audio tag allows you to include audio files in your websites. You specify where the audio file is using the <span class="syntax">src</span> attribute (usually with a relative link). You specify if the website plays the audio automatically using the <span class="syntax">preload</span> attribute. Finally, you also specify if browser audio controls are shown using the <span class="syntax">controls</span> attribute. If the audio file you want to display is unsupported, the browser will display the &lt;p&gt; text. You can specify "fallback" sources of audio using the <span class="syntax">&lt;source&gt;</span></p>
+            <p class="description">The &lt;audio&gt; tag allows you to include audio files in your websites. You specify where the audio file is using the <span class="syntax">src</span> attribute (usually with a relative link). You specify if the website loads the audio automatically using the <span class="syntax">preload</span> attribute. Finally, you also specify if browser's audio controls are shown using the <span class="syntax">controls</span> attribute. If the audio file you want to display is unsupported, the browser will display the &lt;p&gt; text. You can specify "fallback" sources of audio using the <a href=index.html#source>&lt;source&gt;</a>tag.</p>
             <h3 class="content-section-header">Syntax</h3>
             <p class="syntax">&lt;audio src="resources/media/audio-sample.mp3" preload="none" controls&gt;
+            <p class="syntax">&lt;!-- EXTRA FALLBACK AUDIO SOURCES GO HERE WITH THE &lt;source&gt; TAG! --&gt;</p>
             <p class="syntax">&lt;p&gt;This audio format is not supported.&lt;/p&gt;</p>
             <p class="syntax">&lt;/audio&gt;</p>
             <h3 class="content-section-header">In Use</h3>
@@ -175,7 +212,7 @@
             <p id="body">&nbsp;</p>
             
             <h1 class ="content-page-header">&lt;body&gt;</h1>
-            <p class="description">The body tag contains all HTML code that is to be displayed in the main browser window. Everyting in your browser window right now is within a body tag.</p>
+            <p class="description">The &lt;body&gt; tag contains all HTML code that is to be displayed in the main browser window. Everyting in your browser window right now is within a body tag.</p>
             <h3 class="content-section-header">Syntax</h3>
             <p class="syntax">&lt;body&gt;
             <p class="syntax">&lt;!--INSERT WEBSITE CODE--&gt;</p>
@@ -202,7 +239,7 @@
             <p id="button">&nbsp;</p>
             
             <h1 class ="content-page-header">&lt;button&gt;</h1>
-            <p class="description">The &lt;button&gt; empty tag creates a button you can click. Buttons suport event attributes to cause action.</p>
+            <p class="description">The &lt;button&gt; tag creates a button you can click. Buttons suport event attributes to cause action.</p>
             <h3 class="content-section-header">Syntax</h3>
             <p class="syntax">&lt;Button&gt;&lt;img src="resources/media/favicon.png" width="10" height="10"&gt; Sample Button&lt;/button&gt;
             <h3 class="content-section-header">In Use</h3>
@@ -272,8 +309,6 @@
             <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;dt&gt;CSS&lt;/dt&gt;</p>
             <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;CSS is Cascading Style Sheets. It is used to style and format websites.&lt;/dd&gt;</p>
             <p class="syntax">&lt;/dl&gt;</p>
-
-            
             <h3 class="content-section-header">In Use</h3>
             <dl>
                 <dt>This is a definition term</dt>
@@ -298,7 +333,7 @@
             <p id="em">&nbsp;</p>
             
             <h1 class ="content-page-header">&lt;em&gt;</h1>
-            <p class="description">The &lt;em&gt; tag italicizes text. It indicates emphasis and is part of semantic markup </p>
+            <p class="description">The &lt;em&gt; tag italicizes text to indicate emphasis. It is part of semantic markup </p>
             <h3 class="content-section-header">Syntax</h3>
             <p class="syntax">&lt;p&gt;This text shows &lt;em&gt;emphasis&lt;/em&gt; using the em tag.&lt;/p&gt;</p>
             <h3 class="content-section-header">In Use</h3>
@@ -404,11 +439,9 @@
             <p id="head">&nbsp;</p>
             
             <h1 class ="content-page-header">&lt;head&gt;</h1>
-
             <p class="description">The &lt;head&gt; tag allows you to specify information about the website. It usually contains an <a href="index.html#title">&lt;title&gt;</a> tag, which displays the text in the tab of the browser. It can also contain <a href="index.html#link">&lt;link&gt;;</a> tag to link the page to CSS or an icon.</p>
             <h3 class="content-section-header">Syntax</h3>
             <p class="syntax">&lt;!-- The following syntax is for this page. It specifies the CSS stylesheet, the website icon, and the browser tab's text.--&gt;</p>
-
             <p class="syntax">&lt;head&gt;
             <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;link href="resources/css/contentpagestyle.css" type="text/css" rel="stylesheet" media="screen" /&gt;</p>
             <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="icon" href="resources/media/favicon.png"/&gt;</p>
@@ -475,7 +508,7 @@
             <p class="description">The &lt;html&gt; tag specifies that anyting between it and its closing tag is html code.</p>
             <h3 class="content-section-header">Syntax</h3>
             <p class="syntax">&lt;html&gt;</p>
-            <p class="syntax">&lt;!-- INSERT ALL OF THE HTML CODE FOR A .html FILE!</p>
+            <p class="syntax">&lt;!-- INSERT ALL OF THE HTML CODE FOR A .html FILE! --&gt;</p>
             <p class="syntax">&lt;/html&gt;</p>
             <h3 class="content-section-header">In Use</h3>
             <p><i>Look, HTML developer. Everything the browser touches is our kingdom.</i></p>
@@ -488,7 +521,6 @@
             <p class="description">The &lt;i&gt; tag italicizes text.</p>
             <h3 class="content-section-header">Syntax</h3>
             <p class="syntax">&lt;p&gt;This paragraph has some &lt;i&gt;italic text.&lt;/i&gt;&lt;/p&gt;</p>
-
             <h3 class="content-section-header">In Use</h3>
             <p>This paragraph has some <i>italic text.</i></p>
             
@@ -571,9 +603,9 @@
             <p class="description">The &lt;li&gt; tag creates members within the lists created by the <a href="index.html#ul">&lt;ul&gt;</a> tag or the <a href="index.html#ol">&lt;ol&gt;</a> tag. </p>
             <h3 class="content-section-header">Syntax</h3>
             <p class="syntax">&lt;ul&gt;</p>
-            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;This is &lt;li&gt; one.&lt;/li&gt;</p>
-            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;This is &lt;li&gt; two.&lt;/li&gt;</p>
-            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;This is &lt;li&gt; three.&lt;/li&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;This is &amp;lt;li&amp;gt; one.&lt;/li&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;This is &amp;lt;li&amp;gt; two.&lt;/li&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;This is &amp;lt;li&amp;gt; three.&lt;/li&gt;</p>
             <p class="syntax">&lt;/ul&gt;</p>
             <h3 class="content-section-header">In Use</h3>
             <ul>
@@ -594,8 +626,355 @@
             <h3 class="content-section-header">In Use</h3>
             <p>The styling and the icon in the browser tab are examples of &lt;link&gt; in use.</p>
             
+            <br />
+            <p id="meta">&nbsp;</p>
+            
+            <h1 class="content-page-header">&lt;meta /&gt;</h1>
+            <p class="description">The &lt;meta&gt; empty tag does not change the content of the page and goes in the <a href="index.html#head">&lt;head</a> tag. It tells search engines about your webpage (like the author, keywords, a description, etc.)</p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;meta name="keywords" content="HTML, CSS, Website-Development" /&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <p>&lt;!-- No visible syntax! --&gt;</p>
+            
+            <br />
+            <p id="nav">&nbsp;</p>
+            
+            <h1 class="content-page-header">&lt;nav&gt;</h1>
+            <p class="description">The &lt;nav&gt; tag creates a bar that contains major navigational blocks.</p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;nav&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&gt;One&lt;/a&gt; | &lt;a&gt;Two&lt;/a&gt; | &lt;a&gt;Three&lt;/a&gt; | &lt;a&gt;Four&lt;/a&gt; | &lt;a&gt;Five&lt;/a&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <nav>
+                <a>One</a> | <a>Two</a> | <a>Three</a> | <a>Four</a> | <a>Five</a>
+            </nav>
+            
+            <br />
+            <p id="ol">&nbsp;</p>
+            
+            <h1 class="content-page-header">&lt;ol&gt;</h1>
+            <p class="description">The &lt;ol&gt; tag creates an ordered list (numbered list). You add elements to it using the <a href="index.html#li">&lt;li&gt;</a> tag. For an unordered (bulleted) list, use the <a href="index.html#ul">&lt;ul&gt;</a> tag.</p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;ol&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;This is &amp;lt;li&amp;gt; one.&lt;/li&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;This is &amp;lt;li&amp;gt; two.&lt;/li&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;This is &amp;lt;li&amp;gt; three.&lt;/li&gt;</p>
+            <p class="syntax">&lt;/ol&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <ol>
+                <li>This is &lt;li&gt; one.</li>
+                <li>This is &lt;li&gt; two.</li>
+                <li>This is &lt;li&gt; three.</li>
+            </ol>
+            
+            <br />
+            <p id="option">&nbsp;</p>
+            
+            <h1 class="content-page-header">&lt;option&gt;</h1>
+            <p class="description">The &lt;option&gt; tag specifies a selection for the <a href="index.html#select">&lt;select&gt;</a> tag.</p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;select name ="language"&gt;</p>
+            <p class="syntax">&nbsp;&nbps;&nbsp;&nbsp;&lt;option&gt;HTML&lt;/option&gt;</p>
+            <p class="syntax">&nbsp;&nbps;&nbsp;&nbsp;&lt;option&gt;CSS&lt;/option&gt;</p>
+            <p class="syntax">&nbsp;&nbps;&nbsp;&nbsp;&lt;option&gt;JavaScript&lt;/option&gt;</p>
+            <p class="syntax">&lt;/select&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <select name="language">
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JavaScript</option>
+            </select>
             
             
+            <br />
+            <p id="p">&nbsp;</p>
+            
+            <h1 class="content-page-header">&lt;p&gt;</h1>
+            <p class="description">The &lt;p&gt; tag allows you to create text on your website. It starts on a new line.
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;p&gt;This is a &amp;lt;p&amp;gt; tag!</p>
+            <h3 class="content-section-header">In Use</h3>
+            <p>This is a &lt;p&gt; tag!</p>
+            
+            <br />
+            <p id="q">&nbsp;</p>
+            
+            <h1 class="content-page-header">&lt;q&gt;</h1>
+            <p class="description">The &lt;p&gt; tag allows you to insert a quote within a paragraph.
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;p&gt;This is text is a &lt;q&gt;quote.&lt;/q&gt;&lt;/p&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <p>This is text is a <q>quote.</q></p>
+            
+            <br />
+            <p id="s">&nbsp;</p>
+            
+            <h1 class="content-page-header">&lt;s&gt;</h1>
+            <p class="description">The &lt;s&gt; tag designates content that is no longer accurate, but should not be deleted. Most browsers will put a strikethrough through the text in an &lt;s&gt; tag. It is part of semantic markup..
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;p&gt;The current version of HTML is &lt;s&gt;HTML4&lt;/s&gt; HTML5!&lt;/p&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <p>The current version of HTML is <s>HTML4</s> HTML5!</p>
+            
+            <br />
+            <p id="script">&nbsp;</p>
+            
+            <h1 class="content-page-header">&lt;script&gt;</h1>
+            <p class="description">The &lt;script&gt; tag allows you to link JavaScript to your page using its <span class="syntax">src</span> attribute.</p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;script type="text/javascript" src="exampleScript.js"&gt;&lt;/script&gt;
+            <h3 class="content-section-header">In Use</h3>
+            <p>&lt;!-- No visible changes! There is no JavaScript on this website as of now.--&gt;</p>
+            
+            <br />
+            <p id="section">&nbsp;</p>
+            
+            <h1 class="content-page-header">&lt;section&gt;</h1>
+            <p class="description">The &lt;section&gt; tag allows you to group together related content. 
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;section&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;This is a section header&lt;/h2&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Text one.&lt;/p&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Text two.&lt;/p&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Text three.&lt;/p&gt;</p>
+            <p class="syntax">&lt;/section&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <section>
+                <h3>This is a section header</h3>
+                <p>Text one.</p>
+                <p>Text two.</p>
+                <p>Text three.</p>
+            </section>
+            
+            <br />
+            <p id="select">&nbsp;</p>
+            
+            <h1 class="content-page-header">&lt;select&gt;</h1>
+            <p class="description">The &lt;select&gt; tag allows you to create a drop-down selection menu for the <a href="index.html#form">&lt;form&gt;</a> tag. You specifiy the selections using the <a href="index.html#option">&lt;option&gt;</a> tag.</p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;select name ="language"&gt;</p>
+            <p class="syntax">&nbsp;&nbps;&nbsp;&nbsp;&lt;option&gt;HTML&lt;/option&gt;</p>
+            <p class="syntax">&nbsp;&nbps;&nbsp;&nbsp;&lt;option&gt;CSS&lt;/option&gt;</p>
+            <p class="syntax">&nbsp;&nbps;&nbsp;&nbsp;&lt;option&gt;JavaScript&lt;/option&gt;</p>
+            <p class="syntax">&lt;/select&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <select name="language">
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JavaScript</option>
+            </select>
+            
+            <br />
+            <p id="source">&nbsp;</p>
+            
+            <h1 class="content-page-header">&lt;source /&gt;</h1>
+            <p class="description">The &lt;source&gt; empty tag replaces the <span class="syntax">src</span> attribute for <a href="index.html#video">&lt;video&gt;</a> tags (but source is its own tag!).
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;video width="400" height="340" preload="none" controls&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="resources/media/puppy.mp4" type='video/mp4;' codecs="acv1.42E01E, mp4a.40.2/></p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Puppy video.&lt;/p&gt;</p>
+            <p class="syntax">&lt;/video&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <video width="400" height="340" preload="none" controls>
+                <source src="resources/media/puppy.mp4" type='video/mp4;' codecs="acv1.42E01E, mp4a.40.2"/>
+                <p>Puppy video.</p>
+            </video>
+            <p>Video supplied by Jon Duckett's <i>HTML and CSS Design and Build Websites.</i></p>
+            
+            <br />
+            <p id="span">&nbsp;</p>
+            
+            <h1 class="content-page-header">&lt;span&gt;</h1>
+            <p class="description">The &lt;span&gt; tag allows you to use a different <span class="syntax">class</span> or <span class="syntax">id</span> attirubte for the text within it.</p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;p&gt;This is an example of &lt;span class="syntax"&gt;syntax&lt;/span&gt; text styling inserted using the &amp;lt;span&amp;gt; tag.&lt;/p&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <p>This is an example of <span class="syntax">syntax</span> text styling inserted using the &lt;span&gt; tag.</p>
+            
+            <br />
+            <p id="strong">&nbsp;</p>
+            
+            <h1 class="content-page-header">&lt;strong&gt;</h1>
+            <p class="description">The &lt;strong&gt; tag allows you emphasize text of extreme importance. It is part of semantic markup.</p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;p&gt;This text should be emphasized as &lt;strong&gt;EXTREMELY IMPORTANT!&lt;/strong&gt;&lt;/p&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <p>This text should be emphasized as <strong>EXTREMELY IMPORTANT!</strong></p>
+            
+            <br />
+            <p id="style">&nbsp;</p>
+            
+            <h1 class="content-page-header">&lt;style&gt;</h1>
+            <p class="description">The &lt;style&gt; tag allows you to implement CSS rules for your page. If you need to make a website with multiple, uniform pages, an external CSS stylesheet should be linked using the <a href="index.html#link">&lt;link&gt;</a> tag instead of &lt;style&gt;</p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;style type="text/css"&gt;</p>
+            <p class="syntax">/* INSERT CSS CODE HERE */</p>
+            <h3 class="content-section-header">In Use</h3>
+            <p>&lt;!-- NO VISIBLE CHANGES BECAUSE THIS WEBSITE USES AN EXTERNAL CSS STYLESHEET --></p>
+            
+            <br />
+            <p id="sub">&nbsp;</p>
+            
+            <h1 class="content-page-header">&lt;sub&gt;</h1>
+            <p class="description">The &lt;sub&gt; tag formats its text as subscript.</p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;0 is an example of &lt;sub&gt; in use.</p>
+            <h3 class="content-section-header">In Use</h3>
+            <p>H<sub>2</sub>0 is an example of &lt;sub&gt; in use.</p>
+            
+            <br />
+            <p id="sup">&nbsp;</p>
+            
+            <h1 class="content-page-header">&lt;sup&gt;</h1>
+            <p class="description">The &lt;sup&gt; tag formats its text as superscript.</p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;p&gt;x&lt;sub&gt;2&lt;/sub&gt; is an example of &lt;sup&gt; in use.</p>
+            <h3 class="content-section-header">In Use</h3>
+            <p>x<sup>2</sup> is an example of &lt;sup&gt; in use.</p>
+            
+            
+            <br />
+            <p id="table-stuff">&nbsp;</p>
+            
+            <h1 class="content-page-header">&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;, &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;</h1>
+            <ul class="description">
+            <li>&lt;table&gt; creates a table.</li>
+                <ul>
+                    <li>&lt;thead&gt; is an organizational tag that should contain the headings of the table. It is contained within the table tag.</li>
+                    <li>&lt;tbody&gt; is another organizational tag that should contain the body of the table. It is contained within the table tag.</li>
+                    <li>&lt;tfoot&gt; is the final organizational tag that should contain the foot of the table. It is contained within the table tag.</li>
+                    <ul>
+                        <li>&lt;tr&gt; defines a table row. It is contained under one of the three organizational tags.</li>
+                            <ul>
+                                <li>&lt;th&gt; defines a table header for a row or column. Use the <span class="syntax">scope</span> attribute to specify if it is a column header or row header. It is contained under a &lt;tr&gt; tag.</li>
+                                <li>&lt;td&gt; defines table data (one &lt;td&gt; for each column). It is contained under a &lt;tr&gt; tag.</li>
+                            </ul>
+                    </ul>
+                </ul>
+            </ul>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;table&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;thead&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="col&gt;&lt;/th&gt;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- This &lt;th&gt; makes the corner cell that all tables have. --&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="col"&gt;Column One&lt;/th&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="col"&gt;Column Two&lt;/th&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/thead&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;tbody&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;Row One&lt;/th&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;One&lt;/td&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Two&lt;/td&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;Row Two&lt;/th&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Three&lt;/td&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Four&lt;/td&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tbody&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;tfoot&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;Total:&lt;/th&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Four&lt;/td&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Six&lt;/td&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tfoot&gt;</p>
+            <p class="syntax">&lt;/table&gt;</p>
+
+            <h3 class="content-section-header">In Use</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col"></th>   <!-- This <th> makes the corner cell that all tables have. -->
+                        <th scope="col">Column One</th>
+                        <th scope="col">Column Two</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Row One</th>
+                        <td>One</td>
+                        <td>Two</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Row Two</th>
+                        <td>Three</td>
+                        <td>Four</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row">Total:</th>
+                        <td>Four</td>
+                        <td>Six</td>
+                    </tr>
+                </tfoot>
+            </table>
+            
+            <br />
+            <p id="textarea">&nbsp;</p>
+            
+            <h1 class="content-page-header">&lt;textarea&gt;</h1>
+            <p class="description">The &lt;textarea&gt; allows for a multi-line text input for a <a href="index.html#form">&lt;form&gt;</a> tag.</p>
+            <h3 class="content-section-header">Syntax</h3>
+            <h3 class="content-section-header">In Use</h3>
+            <textarea cols="20" rows="4">Add a comment...</textarea>
+            
+            <br />
+            <p id="title">&nbsp;</p>
+            
+            <h1 class="content-page-header">&lt;title&gt;</h1>
+            <p class="description">The &lt;title&gt; defines the title of the page (which is displayed in the top bar or top tabs of the browser. It is contained in the <a href="index.html#head">&lt;head&gt;</a> tag</p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;title&gt;HTML Quick Reference&lt;/title&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <p>&lt;!-- THE CURRENT BROWSER TAB OR TOP BAR SHOWS THE TITLE TAG IN USE --&gt;</p>
+            
+            <br />
+            <p id="u">&nbsp;</p>
+            
+            <h1 class ="content-page-header">&lt;u&gt;</h1>
+            <p class="description">The &lt;u&gt; tag underlines text. It is from older versions of HTML and is being phased out.</p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;p&gt;This paragraph has some &lt;u&gt;underlined text.&lt;/u&gt;&lt;/p&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <p>This paragraph has some <u>underlined text.</u></p>
+            
+            <br />
+            <p id="ul">&nbsp;</p>
+            
+            <h1 class="content-page-header">&lt;ul&gt;</h1>
+            <p class="description">The &lt;ul&gt; tag creates an undered list (bulleted list). You add elements to it using the <a href="index.html#li">&lt;li&gt;</a> tag. For an ordered (numbered) list, use the <a href="index.html#ul">&lt;ol&gt;</a> tag.</p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;ul&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;This is &amp;lt;li&amp;gt; one.&lt;/li&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;This is &amp;lt;li&amp;gt; two.&lt;/li&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;This is &amp;lt;li&amp;gt; three.&lt;/li&gt;</p>
+            <p class="syntax">&lt;/ul&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <ul>
+                <li>This is &lt;li&gt; one.</li>
+                <li>This is &lt;li&gt; two.</li>
+                <li>This is &lt;li&gt; three.</li>
+            </ul>
+            
+            <br />
+            <p id="video">&nbsp;</p>
+            
+            <h1 class="content-page-header">&lt;video&gt;</h1>
+            <p class="description">The &lt;video&gt; tag allows you to insert a video onto your website. You specify the video source using the <a href="index.html#source">&lt;source&gt;</a> tag (with further <a href="index.html#source">&lt;source&gt;</a> tags below the first being "fallback" formats if the first <a href="index.html#source">&lt;source&gt;</a> is not supported.) You also specify if the website auto-loads the video using the <span class="syntax">preload</span> attribute. Finally, you specify if browser's video controls are shown using the <span class="syntax">controls</span> attribute. If all of the <a href="index.html#source">&lt;source&gt;</a> tags used are unsupported, the browser will display the &lt;p&gt; text. </p>
+            <h3 class="content-section-header">Syntax</h3>
+            <p class="syntax">&lt;video width="400" height="340" preload="none" controls&gt;</p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="resources/media/puppy.mp4" type='video/mp4;' codecs="acv1.42E01E, mp4a.40.2/></p>
+            <p class="syntax">&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Puppy video.&lt;/p&gt;</p>
+            <p class="syntax">&lt;/video&gt;</p>
+            <h3 class="content-section-header">In Use</h3>
+            <video width="400" height="340" preload="none" controls>
+                <source src="resources/media/puppy.mp4" type='video/mp4;' codecs="acv1.42E01E, mp4a.40.2"/>
+                <p>Puppy video.</p>
+            </video>
+            <p>Video supplied by Jon Duckett's <i>HTML and CSS Design and Build Websites.</i></p>
             
             <br />
             <br />
